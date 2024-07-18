@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmBase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>FilmBase</h1>
+            <div id="auth">
+                <button onclick="showRegister()">Register</button>
+                <button onclick="showLogin()">Login</button>
+            </div>
+            <div id="userActions" style="display: none;">
+                <span id="welcomeMessage"></span>
+                <button onclick="showMovies()">Display Movies</button>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </header>
+        <div id="content"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
